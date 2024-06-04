@@ -204,7 +204,6 @@ header h1 {
 .car-list {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -220,6 +219,7 @@ header h1 {
     border-radius: 20px;
     position: relative;
     overflow: hidden;
+    margin: 6px;
 }
 
 .car:hover .deskripsi {
@@ -368,6 +368,10 @@ input:checked+label .isi {
 
 .card[for="c3"] {
     background-image: url('asset/McLaren-765.png');
+}
+
+.card[for="c4"] {
+    background-image: url('asset/McLaren\ Artura\ Spider.png');
 }
 
 .slider {
