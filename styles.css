@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #1d1d1d;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;  /*agar scroll horizontal tidak muncul*/
+}
+
+@media(max-width:1000px) {
+    header {
+        flex-direction: column;
+    }
+
+    header h2 {
+        margin-bottom: 15px;
+    }
+
+    header .nav li {
+        margin: 0 7px;
+    }
+}
+
+@media(max-width:700px) {
+    header {
+        padding: 20px 50px;
+    }
+}
+
+@media(max-width:600px) {
+    section {
+        padding: 125px 30px;
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    /* Memberi jarak antara logo dan teks */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    background-image: url();
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.5s ease;
+    display: flex;
+    align-items: center;
+}
+
+header.scrolled {
+    background: #000;
+}
+
+header .container {
+    display: flex;
+    justify-content: flex-start;
+    /* Memindahkan ke sudut kiri */
+    align-items: center;
+    ;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    /* Memindahkan daftar menu ke kanan */
+    align-items: center;
+    /* Memastikan menu tetap berada di tengah secara vertikal */
+    flex-grow: 1;
+    /* Mengisi sisa ruang yang tersedia */
+}
+
+.menu li {
+    margin-left: 20px;
+    /* Memberi jarak antara setiap item menu */
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: gold;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Tambahkan ini untuk menambahkan shadow di bagian bawah video */
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    /* Ubah sesuai kebutuhan */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: wheat;
+    /* Warna teks */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Bayangan teks */
+}
+
+.btn {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+    font-weight: 400;
+}
+
+.btn:hover {
+    background: var(--clr);
+    letter-spacing: 0.25em;
+}
+
+.mobil h2 {
+    color: #fff;
+    text-align: center;
+    margin: 30px auto;
+    /* Untuk memposisikan teks ke tengah */
+    transition: color 0.3s ease;
+}
+
+.mobil:hover h2 {
+    color: gold;
+    /* Warna teks ketika kursor diarahkan */
+}
+
+.car-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.car {
+    height: 500px;
+    width: 320px;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 5px solid #fff;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.car:hover .deskripsi {
+    right: 0;
+}
+
+.car img {
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.deskripsi {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.deskripsi a {
+    color: #ffffff;
+}
+
+.Judul {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.info {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400px;
+}
+
+.btncar {
+    background: rgb(0, 81, 95);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2 {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+}
+
+.card>.row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card>.row>.icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card>.row>.isi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.isi p {
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+}
+
+.isi h4 {
+    text-transform: uppercase;
+}
+
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    width: 600px;
+}
+
+input:checked+label .isi {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('asset/McLaren-P1-Hero.png');
+}
+
+.card[for="c2"] {
+    background-image: url('asset/McLaren-720s.png');
+}
+
+.card[for="c3"] {
+    background-image: url('asset/McLaren-765.png');
+}
+
+.slider {
+    width: 100vw;
+    /* Lebar 100% dari viewport */
+    height: 100vh;
+    /* Tinggi 100% dari viewport */
+    background: url(asset/LEGO-McLaren-Senna_front.1pg.jpg);
+    background-size: cover;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    25% {
+        background: url(asset/maxresdefault.jpg);
+        background-size: cover;
+    }
+
+    50% {
+        background: url(asset/LEGO-McLaren-Senna_front.1pg.jpg);
+        background-size: cover;
+    }
+
+    70% {
+        background: url(asset/maxresdefault.jpg);
+        background-size: cover;
+    }
+
+    100% {
+        background: url(asset/LEGO-McLaren-Senna_front.1pg.jpg);
+        background-size: cover;
+    }
+}
+
+.car-specs h2 {
+    color: #fff;
+    text-align: center;
+    margin: 30px auto;
+    /* Untuk memposisikan teks ke tengah */
+    transition: color 0.3s ease;
+}
+
+.car-specs:hover h2 {
+    color: gold;
+    /* Warna teks ketika kursor diarahkan */
+}
+
+.spec-list {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.spec {
+    height: 500px;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.spec img {
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.social-media {
+    background: #1d1d1d;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.social-media h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    margin: 0 20px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #1d1d1d;
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+}

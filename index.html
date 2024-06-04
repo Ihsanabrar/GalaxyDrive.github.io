@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galaxy Drive</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo-container">
+          <img class="logo" src="asset/Logo.png" alt="Logo" />
+          <h1>Galaxy Drive</h1>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#mobil">Mobil</a></li>
+            <li><a href="#desain">Design</a></li>
+            <li><a href="#kolaborasi">Kolaborasi</a></li>
+            <li><a href="#car-specs">Spek</a></li>
+            <li><a href="#social-media">Follow</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="container">
+        <video autoplay muted loop class="background-video">
+          <source
+            src="asset/McLaren P1 on Backroads - 4k.mkv"
+            type="video/mp4"
+          />
+        </video>
+        <div class="content">
+          <h2>Supreme Performance, Unmatched Elegance</h2>
+          <a href="#mobil" class="btn" style="--clr: #0051ff">Lihat Mobil</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="mobil" class="mobil">
+      <div class="container">
+        <h2>Overview</h2>
+        <div class="car-list">
+          <div class="car">
+            <img src="asset/P1.png" alt="Car 1" />
+            <div class="deskripsi">
+              <h1 class="Judul"><b>McLaren P1</b></h1>
+              <p class="info">
+                The McLaren P1™ is every inch its rightful successor. A
+                technology pioneered by McLaren in Formula 1, and one that lies
+                at the heart of all of our current models.
+              </p>
+              <button class="btncar">
+                <a href="https://cars.mclaren.com/en/legacy/mclaren-p1"
+                  >Detail</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="car">
+            <img src="asset/720s-coupe-jellybean-optimised-1.png" alt="Car 2" />
+            <div class="deskripsi">
+              <h1 class="Judul"><b>McLaren 720S</b></h1>
+              <p class="info">
+                The McLaren 720S coupe is purposeful and radical. With apex
+                predator responses. This light and strong supercar accelerates
+                from 0-60mph in an incredible 2.8 seconds when provoked. And can
+                cover a quarter of a mile in 10.4 seconds. From a standing
+                start.
+              </p>
+              <button class="btncar">
+                <a href="https://cars.mclaren.com/en/super-series/720s"
+                  >Detail</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="car">
+            <img src="asset/765.png" alt="Car 3" />
+            <div class="deskripsi">
+              <h1 class="Judul"><b>McLaren 765</b></h1>
+              <p class="info">
+                Being based on the incredible 720S, the latest McLaren 765 Long
+                Tail has everything in its favour. A flying start. And it
+                delivers on every level. Radically lightened and lower, this
+                powerful supercar uses innovative aerodynamics to create 25%
+                more downforce than the 720S.
+              </p>
+              <button class="btncar">
+                <a href="https://cars.mclaren.com/en/super-series/765lt"
+                  >Detail</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!-- Tambahkan mobil lainnya di sini -->
+        </div>
+      </div>
+    </section>
+
+    <section id="desain" class="desain">
+      <div class="wrapper">
+        <div class="container2">
+          <input type="radio" name="slide" id="c1" />
+          <label for="c1" class="card">
+            <div class="row">
+              <div class="icon">1</div>
+              <div class="isi">
+                <h4>McLaren P1</h4>
+                <p>
+                  The best-looking cars are the ones with real substance as well
+                  as style. The P1™ is a stunning piece of automotive design,
+                  but you won’t find any needless ornaments or frivolous styling
+                  features on it.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="c2" />
+          <label for="c2" class="card">
+            <div class="row">
+              <div class="icon">2</div>
+              <div class="isi">
+                <h4>McLaren 720S</h4>
+                <p>
+                  The McLaren 720S is born of the McLaren design philosophy:
+                  everything for a reason. The powerful simplicity and integrity
+                  of this ethos shapes stunning cars.
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <input type="radio" name="slide" id="c3" />
+          <label for="c3" class="card">
+            <div class="row">
+              <div class="icon">3</div>
+              <div class="isi">
+                <h4>McLaren 765</h4>
+                <p>
+                  Aerodynamic stability. Instant responses. You see it in the
+                  stance – 5mm lower at the front. In the widened front track.
+                  The dramatic side air intakes inspired by the rule
+                  breakingprodigious McLaren 675LT.
+                </p>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+    </section> 
+
+    <section id="kolaborasi" class="kolaborasi">
+      <div class="slider">
+      </div>
+    </section>
+
+    <section id="car-specs" class="car-specs">
+      <div class="container">
+        <h2>Facts & Figure</h2>
+        <div class="spec-list">
+          <div class="spec">
+            <img src="asset/TopSpeed.png"/>
+            </div>
+          
+          <div class="spec">
+            <img src="asset/Torque.png"/>
+            </div>
+          
+          <div class="spec">
+            <img src="asset/Power.png"/>
+            </div>
+          </div>
+          </div>
+          </div>
+  </section>
+
+  <section id="social-media" class="social-media">
+    <div class="container">
+      <h2>Temukan Kami di Sosial Media</h2>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/mclarenautomotive/">
+          <img src="asset/facebook.png" alt="Facebook">
+        </a>
+        <a href="https://github.com/Ihsanabrar">
+          <img src="asset/Github.png" alt="Instagram">
+        </a>
+        <a href="http://www.youtube.com/@McLarenAutomotiveTV">
+          <img src="asset/youtube.png" alt="YouTube">
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Muhammad Ihsan Abrar</p>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
